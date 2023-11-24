@@ -1,18 +1,23 @@
 const numberOfArticle = document.querySelector('#nombre');
-const priceTotal = document.getElementById('priceTotal');
-const totalPrice = document.querySelector('#totalPrice');
+
+const totalPrice = document.querySelectorAll('.priceTotal');
+console.log(totalPrice);
 const item = document.querySelector('#element');
 const history = document.querySelector('#myHistory');
 const clear = document.querySelector('#clear');
 const checkout = document.querySelector('#checkout');
 const explore = document.querySelector('#explore');
-const muBoutton = document.querySelectorAll('.myBtn');
+const myBoutton = document.querySelectorAll('.myBtn');
+console.log(myBoutton)
 const myImage = document.querySelectorAll('.img');
 const card = document.querySelectorAll('.card');
 const image = document.querySelectorAll('.img');
 const detail = document.querySelector('.detail');
 const element = document.getElementById('myHistory');
-
+const valeur = document.querySelectorAll('.monBtn')
+console.log(valeur[0].value);
+const nomElement = document.querySelectorAll('.nom');
+console.log(nomElement);
 const icone = document.querySelectorAll('.icon');
 
 
@@ -26,7 +31,10 @@ if(JSON.parse(localStorage.getItem('item'))){
 
 }
 }
-
+function ajout(){
+    const index = event.target.getAttribute('data-index')
+    
+}
 
 function addElement(){
     let myTableau = JSON.parse(localStorage.getItem('item')) || [];
