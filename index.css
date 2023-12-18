@@ -1,57 +1,42 @@
-.history{
-    margin-left: 72.8rem;
-}
 
 body{
     font-family: 'Mooli', sans-serif;
 }
-/* .card-img-top{
+.card-img-top{
   height: 20rem;
   border-top-left-radius:0%;
   border-top-right-radius:0%;
   cursor: pointer;
   
-  transition: transform .30s;
-} */
+  transition: all 1.5s ease-in-out;
+}
 .image{
-    margin-top: 2rem;
+    margin-top: 1rem;
    
 }
 /* .us{
     font-family: 'Courier New', Courier, monospace;
     font-size: 2rem;
 } */
-.card-img-top:hover,.icon:hover{
-    
-        /* -ms-transform: scale(1) translate(2px);  */
-        /* IE 9 */
-        /* -webkit-transform: scale(3) translate(30px);  Safari 3-8 
-        ;
-      */
-      transform: scale(2) translate(0px);
+.centrer{
+    align-items: center;
 }
+
 .color{
     height: 95vh;
     /* background-color:rgb(245, 245, 139); */
     background-image: url(image/delicieux-petits-gateaux-aux-framboises-creme-accompagnes-biscuits-gateaux-lumiere.jpg);
-    background-size: 60rem;
+    background-repeat:no-repeat;
+    background-size: 90rem;
     margin-top: 0.7rem;
 }
-.bock-text{
-    margin-top: 10rem;
-}
+
 .li{
     width: 2rem;
-}
-li{
-    padding: 5px;
 }
 .logo{
     width: 95%;
     border-radius: 50%;
-}
-@media screen {
-    
 }
 
 .sweet{
@@ -59,9 +44,13 @@ li{
 }
 .title{
     text-transform: capitalize;
-    font-family: 'Mooli', sans-serif;
-    
+    font-family: 'Mooli', sans-serif;  
 }
+.my-element{
+    top: 0;
+}
+
+
 .header{
     color: pink;
     padding: 0px;
@@ -81,9 +70,7 @@ li{
     background-position-y:center ;
 }
 
-/* .hidden{
-    display: none;
-} */
+
 .welcome{
    padding-top: 20rem;
 }
@@ -96,6 +83,7 @@ li{
 .card{
     --bs-card-border-radius:0rem;
     overflow: hidden;
+    position: relative;
 } 
 .myBtn:hover{
 color: palevioletred;
@@ -111,20 +99,13 @@ a:hover{
 }
 .cake{
     border-radius:50% ;
-    width: 80%;
+    width: 60%;
 
 }
 .contenu{
-    background-color: #ffeff7;
+    background-color: rgb(158, 163, 163);
     justify-content: center;
    
-}
-
-element.style {
-}
-.card-img, .card-img-top {
-     border-top-left-radius: 0px; 
-    border-top-right-radius: 0px; 
 }
 .mon-contenu{
     margin: auto;
@@ -135,13 +116,57 @@ background-color: blueviolet;
 }
 .history{
     background-color: blueviolet;
-    opacity: 0.7;
+   right: 20px;
 }
-#ajout{
-    background-color: aqua;
-    width: 15rem;
+.etoil{
+    color: red;
+}
+
+.myStyle{
+    transform: translate(40%,120%);
+    transition: margin-right 4s ;
 }
 header{
     height: 2rem;
+ 
+}
+header ul{
+   align-items: center;
+}
+
+.shop{
+    border-radius: 6px;
+    width: 3rem;
+    height:3rem;
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 0;
+    bottom: 0;
+    transform: translate(100%,100%);
+    transition:all 1s ease-in-out ;
+    cursor: pointer;
+
+}
+.note{
+    color:bisque;
+}
+.class{
+    top: 1.8rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+}
+svg:hover{
+color: antiquewhite;
+cursor: pointer;
+}
+.element ul li:not(:first-child){
+    padding-left: 4rem;
+}
+.card-img-top:hover{
+   
+    transform: scale(1.5);
     
 }
