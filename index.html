@@ -1,513 +1,739 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap.min.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Mooli&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="index.css" />
-    <title>Document</title>
-  </head>
 
-  <body>
-    <div class="">
-      <header>
-        <div class="row">
-          <ul class="list-unstyled justify-content-evenly d-flex ul">
-            <li class="li">
-              <img src="image/cupcakes/logo.png" alt="logo" class="logo" />
-            </li>
-            <li class="title header">home</li>
-            <li class="title header">about</li>
-            <li class="title header">store</li>
-            <li class="">
-              <img src="image/cupcakes/call.svg" alt="" /><span>
-                +227 886 051 56</span
-              >
-            </li>
-            <li>
-              <button id="myHistory" class="btn border-dark m-1">
-                <img src="image/cupcakes/schopping.svg" alt="" class="imag"/><span id="nombre"> 0 </span>
-                  <span id="priceTotal">Items - $0.00</span>
-              </button>
-            </li>
-          </ul>
-          
-        </div>
-        <article class="detail ">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="index.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="">
+    <header class="d-md-none header-1">
+     <ul class="list-unstyled d-flex justify-content-between ">
+          <li class="">
+            <img src="image/cupcakes/call.svg" alt="" /><span>
+              +227 886 051 56</span>
+          </li>
+          <li>
+            <button class="" class="btn border-dark m-1">
+              <img src="image/cupcakes/schopping.svg" alt="" class="imag" /><span class=""> 0 </span>
+              <span class="">Items - $0.00</span>
+            </button>
+          </li>
+        </ul>
+      <article class=" d-md-none ">
        
-          <div class="history position-absolute p-4">
-            <div class="element">
-            </div>
-          
-            <ul class="list-unstyled d-flex justify-content-between mt-5 pt-3">
-              <li class="title">total</li>
-              <li class="totalPrice">$0.00</li>
-            </ul>
-            <div class="p-2">
-              <button class="title1 btn border-dark text-dark me-1" id="clear">
-                clear card</button>
-                <button class="title1 btn border-dark" id="checkout">
-                checkout
-              </button>
-            </div>
+        <div class=" position-absolute p-4 d-none">
+          <div class="">
           </div>
-        </article>
-      </header>
-      <section class="color">
-        <article class="text-center">
-          <h1 class="title text-white welcome">
-            welcome to <span class="store"> <strong>quandhy</strong></span>
-          </h1>
-          <a href="#explore"
-            ><button class="title btn border-dark explore">explore</button></a
-          >
-        </article>
-      </section>
-      <section class="image">
-        <div class="d-flex w-100 centrer">
-          <div class="w-50">
-            <h4 class="text-center">
-              <strong>About <span class="store us">Us</span></strong>
-            </h4>
-            <p class="text-center">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque
-              quidem doloremque, ex nemo vero voluptatibus quibusdam similique
-              iure facere omnis facilis fugiat nobis voluptatum rerum reiciendis
-              aliquid minima? Animi, laboriosam!
-            </p>
-          </div>
-          <div class="d-flex justify-content-end">
-            <img
-              src="image/cupcakes/pink-butterfly-cake.webp"
-              alt=""
-              class="cake"
-            />
+
+          <ul class="list-unstyled d-flex justify-content-between mt-5 pt-3">
+            <li class="title">total</li>
+            <li class="">$0.00</li>
+          </ul>
+          <div class="p-2">
+            <button class="title1 btn border-dark text-dark me-1" class="clear">
+              clear card</button>
+            <button class="title1 btn border-dark" id="checkout">
+              checkout
+            </button>
           </div>
         </div>
-      </section>
-      <section class="contenu" id="explore">
-        <h1 class="text-center text-white">
-          Our <span class="store"><strong>store</strong></span>
+      </article>
+      <div class=" d-flex fs-2 madiv d-none">
+        <ul class="list-unstyled d-flex">
+          <li class="title p-2">home</li>
+          <li class="title p-2">about</li>
+          <li class="title p-2">store</li>
+        </ul>
+      </div>
+    </header>
+    <header class="header">
+      <div class="row">
+        <ul class="list-unstyled justify-content-evenly d-flex ul">
+          <li class="li">
+            <img src="image/cupcakes/logo.png" alt="logo" class="logo" />
+          </li>
+          <li class="title header">home</li>
+          <li class="title header">about</li>
+          <li class="title header">store</li>
+          <li class="">
+            <img src="image/cupcakes/call.svg" alt="" /><span>
+              +227 886 051 56</span>
+          </li>
+          <li>
+            <button id="myHistory" class="btn border-dark m-1">
+              <img src="image/cupcakes/schopping.svg" alt="" class="imag" /><span id="nombre"> 0 </span>
+              <span id="priceTotal">Items - $0.00</span>
+            </button>
+          </li>
+        </ul>
+
+      </div>
+      <article class="detail ">
+
+        <div class="history position-absolute p-4 d-none">
+          <div class="element">
+          </div>
+
+          <ul class="list-unstyled d-flex justify-content-between mt-5 pt-3">
+            <li class="title">total</li>
+            <li class="totalPrice">$0.00</li>
+          </ul>
+          <div class="p-2">
+            <button class="title1 btn border-dark text-dark me-1" id="clear">
+              clear card</button>
+            <button class="title1 btn border-dark" id="checkout">
+              checkout
+            </button>
+          </div>
+        </div>
+      </article>
+    </header>
+    <section class="color">
+      <div class="d-flex d-md-none justify-content-end list"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+          fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+        </svg></div>
+      <article class="text-center">
+        <h1 class="title text-white welcome">
+          welcome to <span class="store"> <strong>quandhy</strong></span>
         </h1>
-        <div class="row">
-          <ul class="list-unstyled d-flex justify-content-around">
-            <li>
-          
-           <button class="myBtn btn border-dark" id="allBtn">All</button>
-            </li>
-            <li>
-         <button class="myBtn btn border-dark" id="cakes">Cakes</button>
-            </li>
-            <li>
-      
-           <button class="myBtn btn border-dark" id="cupCakes">Cupcakes</button>
-            </li>
-            <li>
-         
-              <button class="myBtn btn border-dark" id="sweets">Sweets</button>
-            </li>
-            <li>
-             <button class="myBtn btn border-dark" id="Doughnut">Doughnuts</button>
-            </li>
-          </ul>
+        <a href="#explore"><button class="title btn border-dark explore">explore</button></a>
+      </article>
+    </section>
+    <section class="image">
+      <div class="d-flex w-100 justify-content-around centrer">
+        <div class="">
+          <h4 class="text-center">
+            <strong>About <span class="store us">Us</span></strong>
+          </h4>
+          <p class="text-center">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque
+            quidem doloremque, ex nemo vero voluptatibus quibusdam similique
+            iure facere omnis facilis fugiat nobis voluptatum rerum reiciendis
+            aliquid minima? Animi, laboriosam!
+          </p>
         </div>
-        <div class="input-group mb-3">
-          <input
-            class="input-group-text input"
-            type="button"
-            id="basic-addon1"
-          />
-          <input type="text" class="form-control" id="input"/>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="">All</a></li>
-            <li><a class="dropdown-item">Cakes</a></li>
-            <li><a class="dropdown-item">CupCake</a></li>
-            <li><a class="dropdown-item">CakesBride</a></li>
-            <li><a class="dropdown-item">CakeBirthday</a></li>
-          </ul>
+        <div class="d-flex ">
+          <img src="image/cupcakes/pink-butterfly-cake.webp" alt="" class="cake" />
         </div>
-        <div class="row" id="all">
-          <div class="d-flex justify-content-evenly" id="mycakes">
-            <div class="col-3 my-2 tout" id="">
-              <div class="card ">
-                <img
-                  src="image/i71509-cupcakes-au-chocolat-blanc-et-vanille.jpg"
-                  alt=""
-                  class="card-img-top"
-                />
+      </div>
+    </section>
+    <section class="contenu" id="explore">
+      <h1 class="text-center text-white">
+        Our <span class="store"><strong>store</strong></span>
+      </h1>
+      <div class="row">
+        <ul class="list-unstyled d-flex justify-content-around">
+          <li>
 
-                <div class="position-absolute shop shope" id="cupCake-one"><img src="image/cupcakes/schopping.svg" alt="" srcset=""></div>
-                <div class="d-flex justify-content-end align-items-center position-absolute my-element w-100"><ul class="list-unstyled d-flex align-items-center"> <li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                      </svg></li>
-                      <li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                      </svg></li><li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                      </svg></li><li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                      </svg></li><li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                      </svg></li></ul></div>
-              </div>
-              <div class="card-body bg-light">
-                <ul class="list-unstyled d-flex justify-content-between">
-                  <li>CupCake au vanille</li>
-                  <li><output class="btn monBtn">$ 5</output></li>
+            <button class="myBtn btn border-dark" id="allBtn">All</button>
+          </li>
+          <li>
+            <button class="myBtn btn border-dark" id="cakes">Cakes</button>
+          </li>
+          <li>
+
+            <button class="myBtn btn border-dark" id="cupCakes">Cupcakes</button>
+          </li>
+          <li>
+
+            <button class="myBtn btn border-dark" id="sweets">Sweets</button>
+          </li>
+          <li>
+            <button class="myBtn btn border-dark" id="doughnut">Doughnuts</button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="input-group d-flex justify-content-center m-2">
+        <button class="btn btn-outline-secondary" type="button" id="boutton-addon1"
+          aria-label="Example text with button addon" aria-describedby="button-addon1"><svg
+            xmlns="http://www.w3.org/2000/svg" height="1em"
+            viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+            <path
+              d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+          </svg></button>
+        <input type="text" class=" w-50" list="ice-cream" name="ice-cream" id="input" />
+        <datalist id="ice-cream">
+          <option value="cakes"></option>
+          <option value="cupCakes"></option>
+          <option value="sweets"></option>
+          <option value="doughnuts"></option>
+        </datalist>
+      </div>
+      <div class="row desktop  position-relative" id="all">
+        <div class="d-md-flex justify-content-md-evenly" id="mycakes">
+          <div class="col-md-3 my-md-2 tout" id="">
+            <div class="card ">
+              <img src="image/i71509-cupcakes-au-chocolat-blanc-et-vanille.jpg" alt="" class="card-img-top" />
+
+              <div class="position-absolute shop shope" id="cupCake-one"><img src="image/cupcakes/schopping.svg" alt=""
+                  srcset=""></div>
+              <div class="d-flex justify-content-end align-items-center position-absolute my-element w-100">
+                <ul class="list-unstyled d-flex align-items-center">
+                  <li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg></li>
+                  <li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg></li>
+                  <li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg></li>
+                  <li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg></li>
+                  <li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg></li>
                 </ul>
               </div>
             </div>
-            <div class="col-3 my-2 tout" id="">
-              <div class="card">
-                <img
-                  src="image/i92204-cupcake-framboise.jpg"
-                  alt=""
-                  class="card-img-top"
-                />
-
-                <div class="position-absolute shop shope" id="cupeCake-two"><img src="image/cupcakes/schopping.svg" alt="" srcset=""></div>
-                <div class="d-flex justify-content-end align-items-center position-absolute my-element w-100"><ul class="list-unstyled d-flex align-items-center"> <li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                  </svg></li>
-                  <li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                  </svg></li><li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                  </svg></li><li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                  </svg></li><li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                  </svg></li></ul></div>
-              </div>
-              <div class="card-body bg-light">
-                <ul class="list-unstyled d-flex justify-content-between">
-                  <li>CupCake au Framboise</li>
-                  <li><output class="btn monBtn">$ 10</output></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-3 my-2 tout" id="">
-              <div class="card">
-                <img
-                  src="image/cupcake-chocolat.webp"
-                  alt=""
-                  class="card-img-top"
-                />
-
-                <div class="position-absolute shop" id="cupecake-tree"><img src="image/cupcakes/schopping.svg" alt="" srcset=""></div>
-                <div class="d-flex justify-content-end align-items-center position-absolute my-element w-100"><ul class="list-unstyled d-flex align-items-center"> <li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                  </svg></li>
-                  <li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                  </svg></li><li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                  </svg></li><li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                  </svg></li><li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                  </svg></li></ul></div>
-              </div>
-              <div class="card-body bg-light">
-                <ul class="list-unstyled d-flex justify-content-between">
-                  <li>CupCake au Chocolat</li>
-                  <li><output class="btn monBtn">$ 15</output></li>
-                </ul>
-              </div>
+            <div class="card-body bg-light">
+              <ul class="list-unstyled d-flex justify-content-between">
+                <li>CupCake au vanille</li>
+                <li><output class="btn monBtn">$ 5</output></li>
+              </ul>
             </div>
           </div>
-          <div class="d-flex justify-content-evenly" id="myCupCake">
-            <div class="col-3 my-2 tout" id="">
-              <div class="card">
-                <img
-                  src="image/bonbons-traditionnels.jpg"
-                  alt=""
-                  class="card-img-top sweet"
-                />
+          <div class="col-md-3 my-2 tout" id="">
+            <div class="card">
+              <img src="image/i92204-cupcake-framboise.jpg" alt="" class="card-img-top" />
 
-                <div class="position-absolute shop shope" id="sweet-one"><img src="image/cupcakes/schopping.svg" alt="" srcset=""></div>
-                <div class="d-flex justify-content-end align-items-center position-absolute my-element w-100"><ul class="list-unstyled d-flex align-items-center"> <li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                  </svg></li>
-                  <li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                  </svg></li><li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                  </svg></li><li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                  </svg></li><li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                  </svg></li></ul></div>
-              </div>
-              <div class="card-body bg-light">
-                <ul class="list-unstyled d-flex justify-content-between">
-                  <li>Sweet Item</li>
-                  <li><output class="btn monBtn">$ 5</output></li>
+              <div class="position-absolute shop shope" id="cupeCake-two"><img src="image/cupcakes/schopping.svg" alt=""
+                  srcset=""></div>
+              <div class="d-flex justify-content-end align-items-center position-absolute my-element w-100">
+                <ul class="list-unstyled d-flex align-items-center">
+                  <li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg></li>
+                  <li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg></li>
+                  <li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg></li>
+                  <li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg></li>
+                  <li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg></li>
                 </ul>
               </div>
             </div>
-            <div class="col-3 my-2 tout" id="">
-              <div class="card">
-                <img
-                  src="image/tas-bonbons-fond-blanc_720722-8349.avif"
-                  alt=""
-                  class="card-img-top sweet"
-                />
-
-                <div class="position-absolute shop shope" id="sweet-two"><img src="image/cupcakes/schopping.svg" alt="" srcset=""></div>
-                <div class="d-flex justify-content-end align-items-center position-absolute my-element w-100"><ul class="list-unstyled d-flex align-items-center"> <li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                  </svg></li>
-                  <li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                  </svg></li><li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                  </svg></li><li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                  </svg></li><li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                  </svg></li></ul></div>
-              </div>
-              <div class="card-body bg-light">
-                <ul class="list-unstyled d-flex justify-content-between">
-                  <li>Sweet Item</li>
-                  <li><output class="btn monBtn">$ 10</output></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-3 my-2 tout" id="">
-              <div class="card">
-                <img
-                  src="image/360_F_254920579_xOIyVqIWxgUi0fSQ8FwBC95YlIVZpuCd.jpg"
-                  alt=""
-                  class="card-img-top sweet"
-                />
-
-                <div class="position-absolute shop shope" id="swet-tree"><img src="image/cupcakes/schopping.svg" alt="" srcset=""></div>
-                <div class="d-flex justify-content-end align-items-center position-absolute my-element w-100"><ul class="list-unstyled d-flex align-items-center"> <li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                  </svg></li>
-                  <li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                  </svg></li><li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                  </svg></li><li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                  </svg></li><li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                  </svg></li></ul></div>
-              </div>
-              <div class="card-body bg-light">
-                <ul class="list-unstyled d-flex justify-content-between">
-                  <li>Sweet Indian</li>
-                  <li><output class="btn monBtn">$ 15</output></li>
-                </ul>
-              </div>
+            <div class="card-body bg-light">
+              <ul class="list-unstyled d-flex justify-content-between">
+                <li>CupCake au Framboise</li>
+                <li><output class="btn monBtn">$ 10</output></li>
+              </ul>
             </div>
           </div>
-          <div class="d-flex justify-content-evenly" id="mySweet">
-            <div class="col-3 my-2 tout" id="">
-              <div class="card">
-                <img
-                  src="image/cupcakes/decorated-chocolate-truffle-cake-half-kg-eggless_1.webp"
-                  alt=""
-                  class="card-img-top"
-                />
+          <div class="col-md-3 my-2 tout" id="">
+            <div class="card">
+              <img src="image/cupcake-chocolat.webp" alt="" class="card-img-top" />
 
-                <div class="position-absolute shop shope" id="cake-one"><img src="image/cupcakes/schopping.svg" alt="" srcset=""></div>
-                <div class="d-flex justify-content-end align-items-center position-absolute my-element w-100"><ul class="list-unstyled d-flex align-items-center"> <li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                  </svg></li>
-                  <li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                  </svg></li><li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                  </svg></li><li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                  </svg></li><li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                  </svg></li></ul></div>
-              </div>
-              <div class="card-body bg-light">
-                <ul class="list-unstyled d-flex justify-content-between">
-                  <li>Chocolat Cake</li>
-                  <li><output class="btn monBtn">$ 5</output></li>
+              <div class="position-absolute shop" id="cupecake-tree"><img src="image/cupcakes/schopping.svg" alt=""
+                  srcset=""></div>
+              <div class="d-flex justify-content-end align-items-center position-absolute my-element w-100">
+                <ul class="list-unstyled d-flex align-items-center">
+                  <li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg></li>
+                  <li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg></li>
+                  <li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg></li>
+                  <li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg></li>
+                  <li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg></li>
                 </ul>
               </div>
             </div>
-            <div class="col-3 my-2 tout" id="">
-              <div class="card">
-                <img
-                  src="image/cupcakes/FB_IMG_1695930715764.jpg"
-                  alt=""
-                  class="card-img-top sweet"
-                />
-
-                <div class="position-absolute shop shope" id="cake-two"><img src="image/cupcakes/schopping.svg" alt="" srcset=""></div>
-                <div class="d-flex justify-content-end align-items-center position-absolute my-element w-100"><ul class="list-unstyled d-flex align-items-center"> <li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                  </svg></li>
-                  <li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                  </svg></li><li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                  </svg></li><li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                  </svg></li><li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                  </svg></li></ul></div>
-              </div>
-              <div class="card-body bg-light">
-                <ul class="list-unstyled d-flex justify-content-between">
-                  <li>Cake Item</li>
-                  <li><output class="btn monBtn">$ 10</output></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-3 my-2 tout" id="">
-              <div class="card">
-                <img
-                  src="image/89707_w1024h1024c1cx3222cy2148.jpg"
-                  alt=""
-                  class="card-img-top sweet"
-                />
-                <div class="position-absolute shop shope" id="tree"><img src="image/cupcakes/schopping.svg" alt="" srcset=""></div>
-                <div class="d-flex justify-content-end align-items-center position-absolute my-element w-100"><ul class="list-unstyled d-flex align-items-center"> <li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                  </svg></li>
-                  <li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                  </svg></li><li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                  </svg></li><li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                  </svg></li><li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                  </svg></li></ul></div>
-              </div>
-              <div class="card-body bg-light">
-                <ul class="list-unstyled d-flex justify-content-between">
-                  <li>Red Cake</li>
-                  <li><output class="btn monBtn">$ 15</output></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="d-flex justify-content-evenly" id="myDoughnut">
-            <div class="col-3 my-2 tout" id="">
-              <div class="card">
-                <img
-                  src="image/banana-nutella-doughnuts-recipe-featured.jpg"
-                  alt=""
-                  class="card-img-top sweet"
-                />
-
-                <div class="position-absolute shop shope" id="doudhnut-one"><img src="image/cupcakes/schopping.svg" alt="" srcset=""></div>
-                <div class="d-flex justify-content-end align-items-center position-absolute my-element w-100"><ul class="list-unstyled d-flex align-items-center"> <li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                  </svg></li>
-                  <li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                  </svg></li><li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                  </svg></li><li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                  </svg></li><li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                  </svg></li></ul></div>
-              </div>
-              <div class="card-body bg-light">
-                <ul class="list-unstyled d-flex justify-content-between">
-                  <li>Banana Doughnut</li>
-                  <li><output class="btn monBtn">$ 5</output></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-3 my-2 tout" id="">
-              <div class="card">
-                <img
-                  src="image/glazed-donut-recipe-1-65008ab2b45fb.jpg"
-                  alt=""
-                  class="card-img-top sweet"
-                />
-
-                <div class="position-absolute shop shope" id="doudhnut-two"><img src="image/cupcakes/schopping.svg" alt="" srcset=""></div>
-                <div class="d-flex justify-content-end align-items-center position-absolute my-element w-100"><ul class="list-unstyled d-flex align-items-center"> <li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                  </svg></li>
-                  <li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                  </svg></li><li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                  </svg></li><li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                  </svg></li><li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                  </svg></li></ul></div>
-              </div>
-              <div class="card-body bg-light">
-                <ul class="list-unstyled d-flex justify-content-between">
-                  <li>Glazed Doughnut</li>
-                  <li><output class="btn monBtn">$ 10</output></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-3 my-2 tout" id="">
-              <div class="card">
-                <img
-                  src="image/2201-easy-air-fryer-doughnuts_Mobile-1300x1150.webp"
-                  alt=""
-                  class="card-img-top sweet"
-                />
-                <div class="position-absolute shop shope" id="doudhnut-tree"><img src="image/cupcakes/schopping.svg" alt="" srcset=""></div>
-                <div class="d-flex justify-content-end align-items-center position-absolute my-element w-100"><ul class="list-unstyled d-flex align-items-center"> <li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                  </svg></li>
-                  <li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                  </svg></li><li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                  </svg></li><li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                  </svg></li><li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                  </svg></li></ul></div>
-              </div>
-              <div class="card-body bg-light">
-                <ul class="list-unstyled d-flex justify-content-between">
-                  <li>Fryer Doughnut</li>
-                  <li><output class="btn monBtn">$ 15</output></li>
-                </ul>
-              </div>
+            <div class="card-body bg-light">
+              <ul class="list-unstyled d-flex justify-content-between">
+                <li>CupCake au Chocolat</li>
+                <li><output class="btn monBtn">$ 15</output></li>
+              </ul>
             </div>
           </div>
         </div>
-        <div id="newDiv"></div>
-      </section>
-       <div class=" d-flex justify-content-center align-items-center w-100 d-none" id="parcoursItem">
-        <div class="w-100">
-          <button class="btn">x</button>
-          <div class="card-body d-flex">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
-              <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
-            </svg>
-            <div class="card-img"></div>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
-              <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
-            </svg>
+        <div class="d-md-flex justify-content-evenly" id="myCupCake">
+          <div class="col-md-3 my-2 tout" id="">
+            <div class="card">
+              <img src="image/bonbons-traditionnels.jpg" alt="" class="card-img-top sweet" />
+
+              <div class="position-absolute shop shope" id="sweet-one"><img src="image/cupcakes/schopping.svg" alt=""
+                  srcset=""></div>
+              <div class="d-flex justify-content-end align-items-center position-absolute my-element w-100">
+                <ul class="list-unstyled d-flex align-items-center">
+                  <li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg></li>
+                  <li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg></li>
+                  <li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg></li>
+                  <li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg></li>
+                  <li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg></li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-body bg-light">
+              <ul class="list-unstyled d-flex justify-content-between">
+                <li>Sweet Item</li>
+                <li><output class="btn monBtn">$ 5</output></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3 my-2 tout" id="">
+            <div class="card">
+              <img src="image/tas-bonbons-fond-blanc_720722-8349.avif" alt="" class="card-img-top sweet" />
+
+              <div class="position-absolute shop shope" id="sweet-two"><img src="image/cupcakes/schopping.svg" alt=""
+                  srcset=""></div>
+              <div class="d-flex justify-content-end align-items-center position-absolute my-element w-100">
+                <ul class="list-unstyled d-flex align-items-center">
+                  <li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg></li>
+                  <li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg></li>
+                  <li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg></li>
+                  <li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg></li>
+                  <li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg></li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-body bg-light">
+              <ul class="list-unstyled d-flex justify-content-between">
+                <li>Sweet Item</li>
+                <li><output class="btn monBtn">$ 10</output></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3 my-2 tout" id="">
+            <div class="card">
+              <img src="image/360_F_254920579_xOIyVqIWxgUi0fSQ8FwBC95YlIVZpuCd.jpg" alt="" class="card-img-top sweet" />
+
+              <div class="position-absolute shop shope" id="swet-tree"><img src="image/cupcakes/schopping.svg" alt=""
+                  srcset=""></div>
+              <div class="d-flex justify-content-end align-items-center position-absolute my-element w-100">
+                <ul class="list-unstyled d-flex align-items-center">
+                  <li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg></li>
+                  <li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg></li>
+                  <li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg></li>
+                  <li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg></li>
+                  <li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg></li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-body bg-light">
+              <ul class="list-unstyled d-flex justify-content-between">
+                <li>Sweet Indian</li>
+                <li><output class="btn monBtn">$ 15</output></li>
+              </ul>
+            </div>
           </div>
         </div>
-         
-       </div>
+        <div class="d-md-flex justify-content-evenly" id="mySweet">
+          <div class="col-md-3 my-2 tout" id="">
+            <div class="card">
+              <img src="image/cupcakes/decorated-chocolate-truffle-cake-half-kg-eggless_1.webp" alt=""
+                class="card-img-top" />
+
+              <div class="position-absolute shop shope" id="cake-one"><img src="image/cupcakes/schopping.svg" alt=""
+                  srcset=""></div>
+              <div class="d-flex justify-content-end align-items-center position-absolute my-element w-100">
+                <ul class="list-unstyled d-flex align-items-center">
+                  <li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg></li>
+                  <li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg></li>
+                  <li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg></li>
+                  <li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg></li>
+                  <li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg></li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-body bg-light">
+              <ul class="list-unstyled d-flex justify-content-between">
+                <li>Chocolat Cake</li>
+                <li><output class="btn monBtn">$ 5</output></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3 my-2 tout" id="">
+            <div class="card">
+              <img src="image/cupcakes/FB_IMG_1695930715764.jpg" alt="" class="card-img-top sweet" />
+
+              <div class="position-absolute shop shope" id="cake-two"><img src="image/cupcakes/schopping.svg" alt=""
+                  srcset=""></div>
+              <div class="d-flex justify-content-end align-items-center position-absolute my-element w-100">
+                <ul class="list-unstyled d-flex align-items-center">
+                  <li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg></li>
+                  <li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg></li>
+                  <li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg></li>
+                  <li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg></li>
+                  <li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg></li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-body bg-light">
+              <ul class="list-unstyled d-flex justify-content-between">
+                <li>Cake Item</li>
+                <li><output class="btn monBtn">$ 10</output></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3 my-2 tout" id="">
+            <div class="card">
+              <img src="image/89707_w1024h1024c1cx3222cy2148.jpg" alt="" class="card-img-top sweet" />
+              <div class="position-absolute shop shope" id="tree"><img src="image/cupcakes/schopping.svg" alt=""
+                  srcset=""></div>
+              <div class="d-flex justify-content-end align-items-center position-absolute my-element w-100">
+                <ul class="list-unstyled d-flex align-items-center">
+                  <li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg></li>
+                  <li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg></li>
+                  <li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg></li>
+                  <li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg></li>
+                  <li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg></li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-body bg-light">
+              <ul class="list-unstyled d-flex justify-content-between">
+                <li>Red Cake</li>
+                <li><output class="btn monBtn">$ 15</output></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="d-md-flex justify-content-evenly" id="myDoughnut">
+          <div class="col-md-3 my-2 tout" id="">
+            <div class="card">
+              <img src="image/banana-nutella-doughnuts-recipe-featured.jpg" alt="" class="card-img-top sweet" />
+
+              <div class="position-absolute shop shope" id="doudhnut-one"><img src="image/cupcakes/schopping.svg" alt=""
+                  srcset=""></div>
+              <div class="d-flex justify-content-end align-items-center position-absolute my-element w-100">
+                <ul class="list-unstyled d-flex align-items-center">
+                  <li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg></li>
+                  <li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg></li>
+                  <li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg></li>
+                  <li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg></li>
+                  <li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg></li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-body bg-light">
+              <ul class="list-unstyled d-flex justify-content-between">
+                <li>Banana Doughnut</li>
+                <li><output class="btn monBtn">$ 5</output></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3 my-2 tout" id="">
+            <div class="card">
+              <img src="image/glazed-donut-recipe-1-65008ab2b45fb.jpg" alt="" class="card-img-top sweet" />
+
+              <div class="position-absolute shop shope" id="doudhnut-two"><img src="image/cupcakes/schopping.svg" alt=""
+                  srcset=""></div>
+              <div class="d-flex justify-content-end align-items-center position-absolute my-element w-100">
+                <ul class="list-unstyled d-flex align-items-center">
+                  <li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg></li>
+                  <li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg></li>
+                  <li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg></li>
+                  <li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg></li>
+                  <li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg></li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-body bg-light">
+              <ul class="list-unstyled d-flex justify-content-between">
+                <li>Glazed Doughnut</li>
+                <li><output class="btn monBtn">$ 10</output></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3 my-2 tout" id="">
+            <div class="card ">
+              <img src="image/2201-easy-air-fryer-doughnuts_Mobile-1300x1150.webp" alt="" class="card-img-top sweet" />
+              <div class="position-absolute shop shope" id="doudhnut-tree"><img src="image/cupcakes/schopping.svg"
+                  alt="" srcset=""></div>
+              <div class="d-flex justify-content-end align-items-center position-absolute my-element w-100">
+                <ul class="list-unstyled d-flex align-items-center">
+                  <li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg></li>
+                  <li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg></li>
+                  <li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg></li>
+                  <li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg></li>
+                  <li class="p-1 etoil"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg></li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-body bg-light">
+              <ul class="list-unstyled d-flex justify-content-between">
+                <li>Fryer Doughnut</li>
+                <li><output class="btn monBtn">$ 15</output></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="reussi d-flex align-items-center position-absolute justify-content-end d-none">
+          <p class=" bg-secondary text-light p-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+              fill="currentColor" class="bi bi-exclamation-octagon" viewBox="0 0 16 16">
+              <path
+                d="M4.54.146A.5.5 0 0 1 4.893 0h6.214a.5.5 0 0 1 .353.146l4.394 4.394a.5.5 0 0 1 .146.353v6.214a.5.5 0 0 1-.146.353l-4.394 4.394a.5.5 0 0 1-.353.146H4.893a.5.5 0 0 1-.353-.146L.146 11.46A.5.5 0 0 1 0 11.107V4.893a.5.5 0 0 1 .146-.353L4.54.146zM5.1 1 1 5.1v5.8L5.1 15h5.8l4.1-4.1V5.1L10.9 1z" />
+              <path
+                d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z" />
+            </svg> <span>Votre ajouté au panier avec success</span></p>
+        </div>
+      </div>
+
+      <!-- mobile version -->
+
+
+
+      <div id="newDiv" class="d-flex justify-content-center"></div>
+    </section>
+    <div class=" d-flex justify-content-center  position-absolute asma w-100 d-none" id="parcoursItem">
+      <div class="w-100 ">
+        <div class="w-25 d-flex justify-content-end mb-2 fermer"> <button class="btn bg-body">x</button></div>
+        <div class=" d-flex align-items-center  justify-content-around">
+          <span class="rose " id="arrow-left"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+              fill="currentColor" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
+              <path
+                d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z" />
+            </svg></span>
+          <div class="card-two"></div>
+          <span class="rose " id="arrow-right"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+              fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+              <path
+                d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+            </svg></span>
+        </div>
+      </div>
     </div>
-    <script src="script.js"></script>
-    <script src="index.js" defer></script>
-  
-  </body>
+
+  </div>
+  <script src="script.js"></script>
+  <script src="index.js" defer></script>
+
+</body>
+
 </html>

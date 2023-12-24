@@ -26,7 +26,7 @@ body{
     height: 95vh;
     /* background-color:rgb(245, 245, 139); */
     background-image: url(image/delicieux-petits-gateaux-aux-framboises-creme-accompagnes-biscuits-gateaux-lumiere.jpg);
-    background-repeat:no-repeat;
+ 
     background-size: 90rem;
     margin-top: 0.7rem;
 }
@@ -63,14 +63,14 @@ body{
 .title1{
     text-transform: capitalize;
 }
-.input{
-    background-image: url(image/cupcakes/barRecherche.svg);
-    background-repeat: no-repeat;
-    background-position-x: center ;
-    background-position-y:center ;
+#input{
+ border: 1px solid ;
+
 }
-
-
+#input:focus{
+border: none;
+}
+                      
 .welcome{
    padding-top: 20rem;
 }
@@ -149,9 +149,12 @@ header ul{
     cursor: pointer;
 
 }
-.note{
+/* .note{
     color:bisque;
 }
+.note:hover{
+    color:bisque;
+} */
 .class{
     top: 1.8rem;
     width: 2.5rem;
@@ -169,4 +172,81 @@ cursor: pointer;
    
     transform: scale(1.5);
     
+}
+@media screen and (max-width:497px){
+ #mycakes{
+    padding: 0;
+ }
+ .sweet{
+   height: 400px;
+   
+}
+.card, .card-body{
+    width: 300px;
+    margin: auto;
+}
+.row button{
+    font-size: small;
+}
+.centrer p{
+    width: 250px;
+    font-size: small;
+}
+.header{
+display: none;
+}
+   #mycakes{
+    display: inline-block;
+   
+   }
+   .header-1{
+    font-size: small;
+   }
+   .madiv{
+    right: 0px;
+    top: 2rem;
+    color: pink;
+    background-color: #f7fbfc
+  
+   }
+   };
+@media  (min-width:500px) and (max-width:1030px){
+    .sweet{
+        height: 200px;
+    }
+
+};
+
+
+.reussi{
+ 
+    top: 0;
+    left: 0;
+}
+.note{
+    color: bisque;
+}
+.imageDetail{
+    margin: auto;
+    width: 50rem;
+    height: 500px;
+    border-radius: 15px;
+    
+}
+
+#arrow-left,#arrow-right{
+    width: 16px;
+    height: 16px;
+}
+.asma{
+top: 108em;
+height: 10%;
+    
+}
+.rose{
+    color: pink;
+
+}
+.rose svg{
+ 
 }
